@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search"> 
+            <input type="text" class="search-bar" placeholder="Search for a city...">
+            <button class="search-button"><img src="./assets/images/search.png" alt="Search"></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name. Please try again.</p>
+        </div>
+        <div class="weather-details">
+            <img class="weather-image" src="./assets/images/clear.png" alt="clear-weather">
+            <h1 class="temp">22°C</h1>
+            <div class="real-feel">
+                <h3 class="real-feel-label">Real feel:</h3>
+                <h3 class="real-feel-temp">20°C</h3>
+            </div>
+            <h2 class="city">New York</h2>
+            <h3 class="date">Thursday, 08 July 2026</h3>
+            <div class="weather-specifications">
+                <div class="ws-col">
+                    <img class="ws-image" src="./assets/images/humidity.png" alt="humidity">
+                    <div class="ws-sub-col">
+                        <h3 class="ws-reading humidity">50%</h3>
+                        <h4 class="ws-heading">Humidity</h4>
+                    </div>
+                </div>
+                <div class="ws-col">
+                    <img class="ws-image" src="./assets/images/wind.png" alt="wind">
+                    <div class="ws-sub-col">
+                        <h3 class="ws-reading speed">15 kmph</h3>
+                        <h4 class="ws-heading">Wind</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>© 2026 Brett Cooper—Weather App. All rights reserved.</h4>
+        </div>
+    </div>
+    <script src="./index.js" charset="UTF-8"></script>
+</body>
+</html>
