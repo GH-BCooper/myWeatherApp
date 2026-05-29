@@ -11,15 +11,6 @@ const weatherIcon = document.querySelector(".weather-image");
 async function fetchWeatherData(cityName) {
   const response = await fetch(apiURL + cityName + `&appid=${apiKey}`);
 
-  // Error Handling// API Configuration
-  const apiKey = import.meta.env.VITE_API_KEY;
-  const apiURL = import.meta.env.VITE_API_URL;
-
-  // DOM Element Selection
-  const searchBox = document.querySelector(".search-bar");
-  const searchButton = document.querySelector(".search-button");
-  const weatherIcon = document.querySelector(".weather-image");
-
   // Dynamic Date
   const currentDate = new Date();
 
